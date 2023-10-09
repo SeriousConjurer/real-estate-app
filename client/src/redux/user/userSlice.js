@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+// we store the data but the data is lost when we refresh , so we use redux persist
 const initialState = {
   currentUser: null,
   error: null,
