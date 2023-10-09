@@ -15,9 +15,7 @@ mongoose
   });
 
 const app = express();
-app.get("/", (req, res) => {
-  res.send("dsfsadfasdf");
-});
+
 
 app.use(express.json());
 
