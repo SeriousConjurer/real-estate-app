@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import authRouter from "./routes/auth.route.js";
 import userRouter from "./routes/user.route.js"
 import cookieParser from "cookie-parser";
+import listingRouter from "./routes/listing.route.js";
 // we cannot use environmental variables(.env) by default , we use dotenv to access them
 dotenv.config();
 
@@ -24,6 +25,7 @@ app.use(cookieParser())
 
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
+app.use("/api/listing", listingRouter);
 
 app.listen(3000, () => {
   console.log("sever listening to port 3000");
